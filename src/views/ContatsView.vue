@@ -1,4 +1,0 @@
-<template>
-    Contats Page
-</template>
-

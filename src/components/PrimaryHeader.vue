@@ -25,11 +25,12 @@
 
 <script setup>
 import { ref } from 'vue'
-import { HomeIcon, CommandLineIcon, CursorArrowRippleIcon, CurrencyDollarIcon, ChatBubbleLeftEllipsisIcon, InformationCircleIcon }  from '@heroicons/vue/24/outline'
+import { HomeIcon, Bars3Icon, CommandLineIcon, CursorArrowRippleIcon, CurrencyDollarIcon, ChatBubbleLeftEllipsisIcon, InformationCircleIcon }  from '@heroicons/vue/24/outline'
+import { Popover, PopoverButton, PopoverPanel, PopoverGroup } from '@headlessui/vue'
 
 const menu = ref([
         {label: 'Home', icon:HomeIcon, to:'/'},
-        {label: 'Tecnologias', icon:CommandLineIcon, to:'/#techs'},
+        {label: 'Tecnologias', icon:CommandLineIcon, to:'/techs'},
         // {label: 'Soluções', icon:CursorArrowRippleIcon, to:'/solutions'},
         // {label: 'Orçamentos', icon:CurrencyDollarIcon, to:'/budget'},
         {label: 'Contato', icon:ChatBubbleLeftEllipsisIcon, to:'/contacs'},

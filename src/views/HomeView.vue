@@ -11,8 +11,7 @@
         </div>
     </section>
 
-    <section id="home" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        
+    <section class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">    
         <div class="md:flex-1 ms-3">
             <ul class="stack-list">
                 <li>
@@ -67,7 +66,7 @@
 
 </script>
 
-<style scoped>
+<style>
     .stack-list{
         margin: 0;
         padding: 0;

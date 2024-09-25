@@ -6,11 +6,5 @@
     </footer>
 </template>
 
-<script>
-export default {
-    name: 'PrimaryFooter',
-    data() {
-        btn_login: 'btn-login'
-    }
-}
+<script setup>
 </script>

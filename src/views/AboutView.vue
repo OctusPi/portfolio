@@ -1,4 +1,5 @@
 <template>
+    <img src="/imgs/bg.jpeg" class="bg-about">
     <div class="max-w-4xl mx-auto p-6 rounded-lg shadow-md">
         <h1
             class="text-4xl font-bold home-enfase mb-4">
@@ -94,4 +95,15 @@
             <li>Publicação de aplicativos Android na Google Play Store.</li>
         </ul>
     </div>
+
+    
 </template>
+
+<style scoped>
+    .bg-about{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+</style>
