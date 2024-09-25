@@ -3,8 +3,9 @@
     <div class="max-w-4xl mx-auto p-6 rounded-lg shadow-md">
         <h1
             class="text-4xl font-bold home-enfase mb-4">
-            Francisco Marciano Ferreira Rodrigues
+            Sr. Rodrigues
         </h1>
+        <p><strong>Nome:</strong> Francisco Rodrigues</p>
         <p><strong>E-mail:</strong> <a href="mailto:octuspi@gmail.com" class="text-blue-500">octuspi@gmail.com</a></p>
         <p><strong>Data de nascimento:</strong> 23/09/1991</p>
         <p><strong>GitHub:</strong> <a href="https://github.com/OctusPi" class="text-blue-500">github.com/OctusPi</a>
