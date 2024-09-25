@@ -100,7 +100,7 @@
     
 </template>
 
-<style scoped>
+<style>
     .bg-about{
         width: 100px;
         height: 100px;

@@ -1,5 +1,23 @@
 <template>
-    <section id="home" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+    <section id="about" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 mb-8">
+        <div class="flex-1 text-end mx-4">
+            <h1 class="text-2xl font-bold tracking-tight sm:text-2xl home-enfase">Francisco Rodrigues</h1>
+            <p><strong>E-mail:</strong> <a href="mailto:octuspi@gmail.com" class="text-blue-500">octuspi@gmail.com</a>
+            </p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/OctusPi"
+                    class="text-blue-500">github.com/OctusPi</a>
+            </p>
+
+        </div>
+        <img src="/imgs/bg.jpeg" class="bg-about">
+        <div class="flex-1 text-start mx-4">
+            <h1 class="text-2xl font-bold tracking-tight sm:text-2xl home-enfase">Formação Acadêmica</h1>
+            <p><strong>Bacharelado em Sistema de Informação</strong></p>
+            <p>Universidade Estácio de Sá - Conclusão: 2021</p>
+        </div>
+    </section>
+
+    <section id="home" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 mb-8">
         <div class="flex-1">
             <h1 class="text-4xl font-bold tracking-tight sm:text-6xl home-enfase">Tech Power</h1>
             <p class="mt-4 text-xl text-gray-500">"Desenvolver software é como esculpir um caminho na floresta
@@ -11,44 +29,11 @@
         </div>
     </section>
 
-    <section class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">    
+    <section id="techs" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div class="md:flex-1 ms-3">
             <ul class="stack-list">
-                <li>
-                    <img src="@/assets/imgs/php.png" alt="logo php">
-                </li>
-                <li>
-                    <img src="@/assets/imgs/laravel.svg" alt="logo laravel">
-                </li>
-                <li>
-                    <img src="@/assets/imgs/js.png" alt="logo js">
-                </li>
-                <li>
-                    <img src="@/assets/imgs/logo.svg" alt="logo js">
-                </li>
-                <li>
-                    <img src="@/assets/imgs/bootstrap.png" alt="logo bootstrap">
-                </li>
-                <li>
-                    <img src="@/assets/imgs/tailwind.png" alt="logo tailwind">
-                </li>
-                <li>
-                    <img src="@/assets/imgs/java.png" alt="logo java">
-                </li>
-                <li>
-                    <img src="@/assets/imgs/android.png" alt="logo android">
-                </li>
-                <li>
-                    <img src="@/assets/imgs/mysql.png" alt="logo mysql">
-                </li>
-                <li>
-                    <img src="@/assets/imgs/postgre.png" alt="logo postgre">
-                </li>
-                <li>
-                    <img src="@/assets/imgs/docker.png" alt="logo docker">
-                </li>
-                <li>
-                    <img src="@/assets/imgs/github.png" alt="logo github">
+                <li v-for="(t, i) in techs" :key="i">
+                    <img :src="t.img" :alt="t.alt">
                 </li>
             </ul>
         </div>
@@ -63,26 +48,38 @@
 </template>
 
 <script setup>
-
+const techs = [
+    { alt: 'Logomarca PHP', img: '/imgs/php.png' },
+    { alt: 'Logomarca Laravel', img: '/imgs/laravel.svg' },
+    { alt: 'Logomarca JS', img: '/imgs/js.png' },
+    { alt: 'Logomarca Vue', img: '/imgs/logo.svg' },
+    { alt: 'Logomarca Bootstrap', img: '/imgs/bootstrap.png' },
+    { alt: 'Logomarca Tailwind', img: '/imgs/tailwind.png' },
+    { alt: 'Logomarca Java', img: '/imgs/java.png' },
+    { alt: 'Logomarca Android', img: '/imgs/android.png' },
+    { alt: 'Logomarca Mysql', img: '/imgs/mysql.png' },
+    { alt: 'Logomarca Postgres', img: '/imgs/postgre.png' },
+    { alt: 'Logomarca Docker', img: '/imgs/docker.png' },
+    { alt: 'Logomarca GitHub', img: '/imgs/github.png' }
+]
 </script>
 
 <style>
-    .stack-list{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
+.stack-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
-    .stack-list li{
-        margin: 15px;
-    }
+.stack-list li {
+    margin: 15px;
+}
 
-    .stack-list img{
-        width: 60px;
-        height: auto;
-    }
-
+.stack-list img {
+    width: 60px;
+    height: auto;
+}
 </style>
