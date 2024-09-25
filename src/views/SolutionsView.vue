@@ -1,0 +1,4 @@
+<template>
+    Solutions Page
+</template>
+
