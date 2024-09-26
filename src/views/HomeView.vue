@@ -1,43 +1,42 @@
 <template>
-    <section id="about" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 mb-8">
-        <div class="flex-1 text-end mx-4">
+    <section id="about"
+        class="mx-auto flex flex-col lg:flex-row max-w-7xl items-center justify-between p-6 lg:px-8 mb-8">
+        <div class="flex-1 text-center lg:text-end order-2 lg:order-none mx-4">
             <h1 class="text-2xl font-bold tracking-tight sm:text-2xl home-enfase">Francisco Rodrigues</h1>
             <p><strong>E-mail:</strong> <a href="mailto:octuspi@gmail.com" class="text-blue-500">octuspi@gmail.com</a>
             </p>
             <p><strong>GitHub:</strong> <a href="https://github.com/OctusPi"
-                    class="text-blue-500">github.com/OctusPi</a>
-            </p>
-
+                    class="text-blue-500">github.com/OctusPi</a></p>
         </div>
-        <img src="/imgs/bg.jpeg" class="bg-about">
-        <div class="flex-1 text-start mx-4">
+        <img src="/imgs/bg.jpeg" class="bg-about order-1 lg:order-none my-4 lg:my-0 lg:mx-4">
+        <div class="flex-1 text-center lg:text-start order-3 lg:order-none mx-4">
             <h1 class="text-2xl font-bold tracking-tight sm:text-2xl home-enfase">Formação Acadêmica</h1>
             <p><strong>Bacharelado em Sistema de Informação</strong></p>
             <p>Universidade Estácio de Sá - Conclusão: 2021</p>
         </div>
     </section>
 
-    <section id="home" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 mb-8">
-        <div class="flex-1">
-            <h1 class="text-4xl font-bold tracking-tight sm:text-6xl home-enfase">Tech Power</h1>
-            <p class="mt-4 text-xl text-gray-500">"Desenvolver software é como esculpir um caminho na floresta
-                digital. À medida que avançamos, não apenas moldamos o código, mas também o futuro, criando trilhas
-                que outros seguirão, explorando possibilidades e transformando desafios em oportunidades."</p>
-        </div>
-        <div class="md:flex-1">
-            <img src="/imgs/decorative-home.svg" alt="Imagem Docorativa" />
-        </div>
-    </section>
+    <section id="home" class="mx-auto flex flex-col lg:flex-row max-w-7xl items-center justify-between p-6 lg:px-8 mb-8">
+    <div class="w-full my-6 lg:my-0 lg:w-1/2 order-1 lg:order-last">
+        <img src="/imgs/decorative-home.svg" alt="Imagem Decorativa" class="mx-auto w-full max-w-md lg:max-w-full" />
+    </div>
+    <div class="w-full text-center lg:text-left lg:w-1/2 order-2 lg:order-first">
+        <h1 class="text-4xl font-bold tracking-tight sm:text-6xl home-enfase">Tech Power</h1>
+        <p class="mt-4 text-xl text-gray-500">"Desenvolver software é como esculpir um caminho na floresta digital. À medida que avançamos, não apenas moldamos o código, mas também o futuro, criando trilhas que outros seguirão, explorando possibilidades e transformando desafios em oportunidades."</p>
+    </div>
+</section>
 
-    <section id="techs" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <div class="md:flex-1 ms-3">
+
+    <section id="techs"
+        class="mx-auto flex flex-col lg:flex-row max-w-7xl items-center justify-between p-6 lg:px-8 mb-8">
+        <div class="w-full text-center lg:text-left lg:w-1/2">
             <ul class="stack-list">
                 <li v-for="(t, i) in techs" :key="i">
                     <img :src="t.img" :alt="t.alt">
                 </li>
             </ul>
         </div>
-        <div class="flex-1">
+        <div class="w-full my-6 lg:my-0 lg:w-1/2">
             <h1 class="text-4xl font-bold tracking-tight sm:text-6xl home-enfase">Full Stack</h1>
             <p class="mt-4 text-xl text-gray-500">Um profissional capaz de trabalhar em
                 todas as camadas de uma aplicação, desde o backend até o frontend. Com habilidades para

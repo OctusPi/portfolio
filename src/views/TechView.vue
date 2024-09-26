@@ -2,7 +2,7 @@
     <section class="mx-auto max-w-7xl justify-between p-6 lg:px-8">
         <div class="mb-6">
             <ul class="stack-list">
-                <li v-for="(t, i) in techs" :key="i" @mouseover="() => view = t">
+                <li v-for="(t, i) in techs" :key="i" @mouseover="() => view = t" @click="() => view = t">
                     <img :src="t.img" :alt="t.alt">
                 </li>
             </ul>
