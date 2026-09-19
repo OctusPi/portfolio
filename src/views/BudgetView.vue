@@ -1,4 +1,0 @@
-<template>
-    Budget Page
-</template>
-
