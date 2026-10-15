@@ -24,7 +24,7 @@ Este é um portfólio utilizando Vue.js (Composition API) e Tailwind CSS para a 
 
 Certifique-se de ter instalado em sua máquina:
 
-- Node.js (versão 18+)
+- Node.js (versão 24)
 - npm ou yarn
 
 ## Instalação
