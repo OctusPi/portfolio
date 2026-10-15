@@ -9,19 +9,29 @@
                 </p>
             </div>
 
-            <!-- Destaque -->
+            <!-- Destaque (no ar) -->
             <article v-reveal
                 class="card relative mt-12 overflow-hidden border-brand-400/20 bg-gradient-to-br from-brand-600/15 via-transparent to-transparent p-6 sm:p-10">
                 <div class="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-brand-500/20 blur-[100px]"
                     aria-hidden="true"></div>
                 <div class="relative">
-                    <div class="flex flex-wrap items-center gap-3">
-                        <h3 class="text-2xl font-bold text-white sm:text-3xl">{{ spotlight.name }}</h3>
-                        <span
-                            class="inline-flex items-center gap-1.5 rounded-full border border-amber-300/20 bg-amber-300/10 px-2.5 py-0.5 text-xs font-medium text-amber-200">
-                            <span class="h-1.5 w-1.5 rounded-full bg-amber-300"></span>
-                            {{ spotlight.status }}
-                        </span>
+                    <div class="flex flex-wrap items-start justify-between gap-6">
+                        <div>
+                            <div class="flex flex-wrap items-center gap-3">
+                                <h3 class="text-2xl font-bold text-white sm:text-3xl">{{ spotlight.name }}</h3>
+                                <span
+                                    class="inline-flex items-center gap-1.5 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-2.5 py-0.5 text-xs font-medium text-emerald-300">
+                                    <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                                    {{ spotlight.status }}
+                                </span>
+                            </div>
+                            <p class="mt-1 font-mono text-xs text-slate-500">{{ domain(spotlight.url) }}</p>
+                        </div>
+                        <a :href="spotlight.url" target="_blank" rel="noopener" class="btn-primary group">
+                            Acessar o {{ spotlight.name }}
+                            <ArrowUpRightIcon
+                                class="h-5 w-5 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                        </a>
                     </div>
                     <p class="mt-3 max-w-2xl text-lg text-slate-300">{{ spotlight.tagline }}</p>
 

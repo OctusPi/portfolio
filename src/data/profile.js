@@ -99,11 +99,12 @@ export const experience = [
     }
 ]
 
-// Projeto em destaque (em desenvolvimento)
+// Projeto em destaque
 export const spotlight = {
     name: 'ClinicBox',
+    url: 'https://clinicbox.octuspi.com/',
     tagline: 'Plataforma completa para gestão de clínicas, do totem de senhas ao laudo assinado.',
-    status: 'Em desenvolvimento',
+    status: 'No ar',
     features: [
         { title: 'Fila e senhas', desc: 'Totem de emissão, prioridades (60+, 80+, gestantes), chamada por guichê, painel de TV e impressão ESC/POS.' },
         { title: 'Prontuário (PEP)', desc: 'Triagem com classificação de risco, atendimentos com assinatura imutável (SHA-256), adendos e linha do tempo unificada.' },
